@@ -1,1 +1,1 @@
-
+We use count+=nums[i] instead of Math.min(nums[i],nums[i+1]), because it's not only faster, it is because we know that in sorted array, when making a pair, the left element always has a smaller value than the right one.
