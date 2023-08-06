@@ -16,6 +16,7 @@ Example 1:
 Input: names = ["Mary","John","Emma"], heights = [180,165,170]
 Output: ["Mary","Emma","John"]
 Explanation: Mary is the tallest, followed by Emma and John.
+
 Example 2:
 
 Input: names = ["Alice","Bob","Bob"], heights = [155,185,150]
