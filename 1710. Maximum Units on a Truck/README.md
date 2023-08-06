@@ -23,6 +23,7 @@ Explanation: There are:
 - 3 boxes of the third type that contain 1 unit each.
 You can take all the boxes of the first and second types, and one box of the third type.
 The total number of units will be = (1 * 3) + (2 * 2) + (1 * 1) = 8.
+
 Example 2:
 
 Input: boxTypes = [[5,10],[2,5],[4,7],[3,9]], truckSize = 10
