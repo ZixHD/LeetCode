@@ -9,7 +9,7 @@ class Solution {
             }
             
             ans[i] = prices[i] - (stack.size() > 0 ? prices[stack.peek()] : 0);
-            stack.push(prices[i]);y
+            stack.push(prices[i]);
         }
 
         return ans;
