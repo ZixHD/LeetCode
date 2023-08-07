@@ -1,1 +1,1 @@
-We will use binary search for this problem.
+We will use 2 pointers for this problem.
