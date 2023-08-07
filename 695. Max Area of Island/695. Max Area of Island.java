@@ -1,23 +1,27 @@
 class Solution {
-    int grid[][];
-    boolean seen[][];
-
-    public int area(int r,int c){
-        if(r<0 || r>=grid.length || c<0 || c>=grid[0].length || seen[r][c] || grid[r][c]==0){
-            return 0;
-        }
-        seen[r][c]=true;
-        return (1+area(r+1,c) + area(r-1,c)+area(r,c+1)+area(r,c-1) );
-    }
     public int maxAreaOfIsland(int[][] grid) {
-        this.grid=grid;
-        seen=new boolean[grid.length][grid[0].length];
-        int ans=0;
-        for(int r=0;r<grid.length;r++){
-            for(int c=0;c<grid[0].length;c++){
-                ans=Math.max(ans,area(r,c));
-            }
+       
+       int max = 0;;
+       for(int i = 0; i < grid.length; i++){
+           for(int j = 0; j < grid[0].length; j++){
+               if(grid[i][j] == 1){
+                   max = Math.max(max,dfs(grid,i,j));
+                   
+               }
+           }
+       }
+       return max;
+
+    }
+
+
+    public int dfs(int[][] grid,int row,int col){
+        
+        if(row >= 0  && row < grid.length && col >= 0 && col < grid[0].length && grid[row][col] == 1){
+          grid[row][col] = 0;
+          return 1 + dfs(grid,row + 1,col) + dfs(grid,row - 1,col) + dfs(grid,row,col + 1) + dfs(grid,row,col - 1);
         }
-        return ans;
+        return 0;
+       
     }
 }
