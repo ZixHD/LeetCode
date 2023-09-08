@@ -43,11 +43,7 @@ Constraints:
 2 <= cookies.length <= 8
 1 <= cookies[i] <= 105
 2 <= k <= cookies.length
-Accepted
-81.2K
-Submissions
-116.2K
-Acceptan
+
 
 https://leetcode.com/problems/fair-distribution-of-cookies/description/
 
